@@ -7,7 +7,7 @@ def get_data():
 		{
 			"module_name": "Ensiab",
 			"color": "green",
-			"icon": "fa fa-etsy",
+			"icon": "fa fa-people",
 			"type": "module",
 			"label": _("Ensiab")
 		}
