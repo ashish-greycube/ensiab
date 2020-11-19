@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ensiab *.css
+recursive-include ensiab *.csv
+recursive-include ensiab *.html
+recursive-include ensiab *.ico
+recursive-include ensiab *.js
+recursive-include ensiab *.json
+recursive-include ensiab *.md
+recursive-include ensiab *.png
+recursive-include ensiab *.py
+recursive-include ensiab *.svg
+recursive-include ensiab *.txt
+recursive-exclude ensiab *.pyc
