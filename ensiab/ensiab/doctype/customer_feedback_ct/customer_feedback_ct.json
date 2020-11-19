@@ -1,0 +1,231 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-11-19 10:08:04.970439",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "transaction_date",
+  "branch",
+  "sales_partner",
+  "follow_up_date",
+  "cb_1",
+  "customer",
+  "sales_invoice",
+  "contact_person",
+  "mobile",
+  "whatsapp_no",
+  "email",
+  "sb_products",
+  "requested_product",
+  "cb_2",
+  "purchased_product",
+  "sb_fdbk",
+  "manager_feedback",
+  "action_required",
+  "satisfaction",
+  "cb_3",
+  "customer_feedback",
+  "impression",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "ES-CF-.#",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "sales_partner",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Sales Partner"
+  },
+  {
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "Follow up Date"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Invoice No",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "read_only": 1
+  },
+  {
+   "fieldname": "whatsapp_no",
+   "fieldtype": "Data",
+   "label": "WhatsApp No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "sb_products",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_product",
+   "fieldtype": "Table",
+   "label": "Requested Product",
+   "options": "Requested Product CT"
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchased_product",
+   "fieldtype": "Table",
+   "label": "Purchased Product",
+   "options": "Purchased Product CT"
+  },
+  {
+   "fieldname": "sb_fdbk",
+   "fieldtype": "Section Break",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "manager_feedback",
+   "fieldtype": "Small Text",
+   "label": "Manager Feedback"
+  },
+  {
+   "fieldname": "action_required",
+   "fieldtype": "Select",
+   "label": "Action Required",
+   "options": "Action 1\nAction 2"
+  },
+  {
+   "fieldname": "cb_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_feedback",
+   "fieldtype": "Small Text",
+   "label": "Customer Feedback"
+  },
+  {
+   "fieldname": "impression",
+   "fieldtype": "Small Text",
+   "label": "Impression"
+  },
+  {
+   "fieldname": "satisfaction",
+   "fieldtype": "Select",
+   "label": "Satisfaction",
+   "options": "Satisfied\nNot Satisfied"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customer Feedback CT",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-11-19 10:09:31.911469",
+ "modified_by": "Administrator",
+ "module": "Ensiab",
+ "name": "Customer Feedback CT",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
