@@ -85,18 +85,21 @@
    "options": "Contact"
   },
   {
+   "fetch_from": "contact_person.mobile_no",
    "fieldname": "mobile",
    "fieldtype": "Data",
    "label": "Mobile",
    "read_only": 1
   },
   {
+   "fetch_from": "contact_person.mobile_no",
    "fieldname": "whatsapp_no",
    "fieldtype": "Data",
    "label": "WhatsApp No",
    "read_only": 1
   },
   {
+   "fetch_from": "contact_person.email_id",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
@@ -168,7 +171,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-19 10:09:31.911469",
+ "modified": "2020-11-19 10:18:08.184476",
  "modified_by": "Administrator",
  "module": "Ensiab",
  "name": "Customer Feedback CT",
